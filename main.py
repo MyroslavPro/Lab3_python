@@ -3,6 +3,7 @@ from Enum_types import Order,Type,Kind,Freezing
 from Date import Date
 from ShopManager import ShopManager
 
+
 def main():
     salmon = Fish(name="Salmon", price=15.0, country=None, provider=None, type_of_fish=Type.FreshWater)
 
