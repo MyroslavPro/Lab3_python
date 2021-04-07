@@ -6,9 +6,13 @@ class ShopManager:
     def __init__(self, fish: list):
         self.__fish = fish
 
+    #def sort_by_price(self, order: Order):
+    #    self.__fish.sort(key=lambda fish: fish.price, reverse=order.value)
+    #    return self.__fish
     def sort_by_price(self, order: Order):
-        self.__fish.sort(key=lambda fish: fish.price, reverse=order.value)
+        self.__fish.sort(key = Fish.func1, reverse= order.value)
         return self.__fish
+
 
     def search_fish_by_type(self, type_of_fish: Type):
         found_fish = [fish for fish in self.__fish if fish.type_of_fish == type_of_fish]
