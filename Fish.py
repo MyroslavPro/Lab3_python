@@ -15,3 +15,6 @@ class Fish(Items):
     def __str__(self):
         res_items = f"\nName_of_Item: {self.name}\nPrice: {self.price}\nCountry: {self.country}\nOrigin: {self.origin} \nType of Fish: {self.type_of_fish}"
         return res_items
+
+    def func1(self):
+        return self.price
